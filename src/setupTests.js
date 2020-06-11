@@ -4,3 +4,11 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom/extend-expect';
 import 'mutationobserver-shim';
+import React from 'react';
+import { render } from '@testing-library/react';
+import App from './App';
+
+
+test("renders App without crashing", () => {
+  render(<App />);
+});
