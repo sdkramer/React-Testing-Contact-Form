@@ -7,7 +7,9 @@ const ContactForm = () => {
     mode: "onBlur",
   });
   const onSubmit = (data) => {
+    
     setData(data);
+    console.log(data);
   };
 
   return (
